@@ -5,7 +5,8 @@
         "has": [
           {
             "type": "header",
-            "key": "authorization"
+            "key": "authorization",
+            "value": "Basic <?env AUTH_PAIR?>"
           }
         ],
         "continue": true
