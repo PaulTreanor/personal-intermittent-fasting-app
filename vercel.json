@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "src": "/.*",
+        "headers": {
+          "www-authenticate": "Basic realm='Secure Area'"
+        },
+        "methods": ["GET", "POST"],
+        "continue": true
+      }
+    ]
+  }
+  
