@@ -24,9 +24,9 @@ export default function FastingApp() {
   const [schedule, setSchedule] = useState<Schedule>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem(STORAGE_KEY)
-      return saved ? JSON.parse(saved) : { startTime: "12:00", endTime: "20:00" }
+      return saved ? JSON.parse(saved) : { startTime: "10:00", endTime: "20:00" }
     }
-    return { startTime: "12:00", endTime: "20:00" }
+    return { startTime: "10:00", endTime: "20:00" }
   })
   const [timeRemaining, setTimeRemaining] = useState<number>(0)
   const [isFasting, setIsFasting] = useState<boolean>(true)
