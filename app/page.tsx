@@ -81,16 +81,6 @@ export default function FastingApp() {
         <div className="text-center">
           <div className="text-3xl font-bold mb-2">{formatTime(timeRemaining)}</div>
           <div className="text-lg font-medium mb-4">{isFasting ? "Time until eating" : "Time until fasting"}</div>
-          <Button
-            onClick={() => {
-              const now = new Date()
-              const currentTime = now.toTimeString().slice(0, 5)
-              setSchedule({ startTime: currentTime, endTime: currentTime })
-            }}
-            className="w-full"
-          >
-            Reset to Now
-          </Button>
         </div>
       </div>
     </div>
